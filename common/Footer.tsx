@@ -4,8 +4,6 @@ import { contrastColorMode, hexColor } from './utils'
 
 const SOCIALS = {
   discord: { icon: <FaDiscord />, link: 'https://discord.gg/dictators' },
-  github: { icon: <FaGithub />, link: 'https://github.com/cardinal-labs' },
-  medium: { icon: <FaMedium />, link: 'https://cardinal-labs.medium.com/' },
   twitter: { icon: <FaTwitter />, link: 'https://twitter.com/DictatorsNFT_' },
 }
 
@@ -29,15 +27,15 @@ export const Footer = ({
             className="inline-block h-[28px]"
             src={
               contrastColorMode(bgColor)[1]
-                ? '/cardinal-crosshair.svg'
-                : '/cardinal-crosshair-dark.svg'
+                ? '/nukepad-light.svg'
+                : '/nukepad-dark.svg'
             }
           />
           <span
             className="ml-3 text-2xl font-semibold"
             style={{ color: lighten(0.4, contrastColorMode(bgColor)[0]) }}
           >
-            Dictators
+            Powered by <b>NUKE</b>Pad
           </span>
         </div>
         <div className="flex gap-10 self-end text-center md:gap-20">
@@ -46,34 +44,25 @@ export const Footer = ({
               className="mb-2 text-lg font-semibold"
               style={{ color: lighten(0.4, contrastColorMode(bgColor)[0]) }}
             >
-              App
+              Follow Us
             </div>
-            <a href="/" className="text-gray-400">
-              Pools
-            </a>
-            <a href="/admin" className="text-gray-400">
-              Admin
-            </a>
-          </span>
-          <span className="flex flex-col items-start gap-1">
-            <div
-              className="mb-2 text-lg font-semibold"
-              style={{ color: lighten(0.4, contrastColorMode(bgColor)[0]) }}
-            >
-              Resources
-            </div>
-            <a href="https://docs.cardinal.so/" className="text-gray-400">
-              Documentation
-            </a>
-            <a
-              href="https://github.com/cardinal-labs"
-              className="text-gray-400"
-            >
-              Github
-            </a>
-            <a href="mailto:team@cardinal.so" className="text-gray-400">
-              Contact
-            </a>
+            <div className="flex gap-4 text-gray-200">
+          {Object.entries(SOCIALS).map(([id, { icon, link }]) => {
+            return (
+              <a
+                key={id}
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: accentColor }}
+                className={`hover:text-primary opacity-80 transition-opacity hover:opacity-100`}
+              >
+                {icon}
+              </a>
+            )
+          })}
+        </div>
+          
             {/*<a href="" className="text-gray-400">
               Privacy
             </a> */}
@@ -106,28 +95,13 @@ export const Footer = ({
         style={{ borderColor: lighten(0.2, bgColor) }}
       >
         <div className="flex items-center justify-center gap-2 text-gray-400">
-          Powered by NUKEPad
-        </div>
-        <div className="flex gap-4 text-gray-200">
-          {Object.entries(SOCIALS).map(([id, { icon, link }]) => {
-            return (
-              <a
-                key={id}
-                href={link}
-                target="_blank"
-                rel="noreferrer"
-                style={{ color: accentColor }}
-                className={`hover:text-primary opacity-80 transition-opacity hover:opacity-100`}
-              >
-                {icon}
-              </a>
-            )
-          })}
+          Made with ♥︎ by Dictators
         </div>
       </div>
       {/* <div className="text-md flex flex-row justify-center font-medium">
         Copyright 2022 NUKEPad. All rights reserved
       </div> */}
+
     </div>
   )
 }

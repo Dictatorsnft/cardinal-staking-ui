@@ -1,6 +1,7 @@
+import { lighten } from '@mui/material'
 import { Footer } from 'common/Footer'
 import { Header } from 'common/Header'
-import { pubKeyUrl, shortPubKey } from 'common/utils'
+import { contrastColorMode, pubKeyUrl, shortPubKey } from 'common/utils'
 import { useAllStakePools } from 'hooks/useAllStakePools'
 import { useStats } from 'hooks/useStats'
 import Head from 'next/head'
@@ -20,6 +21,8 @@ function Home() {
   const router = useRouter()
   const stats = useStats()
 
+  
+
   return (
     <div>
       <Head>
@@ -33,30 +36,42 @@ function Home() {
         ></script>
       </Head>
 
-      <div>
-        {stats.isFetched && stats.data && (
-          <div className="flex flex-wrap justify-center md:flex-nowrap lg:flex lg:flex-row">
-            {Object.keys(stats.data).map((name, i) => {
-              return (
-                <div key={i} className="mx-5 gap-1 pt-2 text-xs">
-                  <span className="font-semibold">{name}:</span>
-                  <span className="ml-2 text-green-500">
 
-                    {Number(
-                      stats.data![name]!.data.parsed.value
-                    ).toLocaleString()}
-                  </span>
-                </div>
-              )
-            })}
-          </div>
-        )}
         <Header />
-        <h1>HELLO DICTATORS</h1>
+        <div className="header">
+        <span
+            className="ml-6 text-2xl font-semibold"
+          >
+            One Stop Solution For <b>Everything Web3</b> <br />
+           <br />
+          </span>
+        </div>
+        <div className="staking1" allign-center > 
+        <span
+            className="ml-3 text-2xl font-semibold"
+          >
+            Stake <b>Dictators</b>
+          </span>
+        <h3>&nbsp; &nbsp;Earn $NUKE by staking your Dictator. &nbsp; Access <br /> &nbsp; &nbsp;the most premium perks of NUKEDAO; get whitelisted <br /> &nbsp; &nbsp;for $NUKE based mints and earn $SOL rewards.</h3>
+        <a href="https://citadel.nukepad.io/dictators"><button className="button button5">  <img src="/nuke.png" /> &nbsp;&nbsp;STAKE&nbsp;YOUR DICTATOR</button></a>  
+        </div>
+<br />
+<br />
+        <div className="nuketopia" allign-center > 
+        <span
+            className="ml-4 text-2xl font-semibold"
+          >
+            Enter <b>Nuketopia</b> <br />
+           <br /> &nbsp; &nbsp;<span>Coming Soon...</span> 
+          </span>
+        </div>
         <Footer />
       </div>
-    </div>
   )
 }
 
 export default Home
+function bgColor(bgColor: any) {
+  throw new Error('Function not implemented.')
+}
+

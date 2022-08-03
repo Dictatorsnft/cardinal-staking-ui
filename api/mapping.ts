@@ -729,7 +729,7 @@ export const stakePoolMetadatas: StakePoolMetadata[] = [
     stakePoolAddress: new PublicKey(
       'FGwmVFD2b8UcdwUzwcaPzTSd8UCiyp5EoeNjoaqwnAy6'
     ),
-    websiteUrl: 'https://citadel.thedictator.xyz',
+    websiteUrl: 'https://citadel.nukepad.io',
     receiptType: ReceiptType.Original,
     maxStaked: 5000, // update with collection size
     imageUrl: 'https://shdw-drive.genesysgo.net/4B5uhQo61B8JrutW1EXYhedw8uycMWE8JVmw1onbLjTh/Dlogo.svg',
