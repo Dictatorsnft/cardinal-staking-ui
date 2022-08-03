@@ -14,7 +14,7 @@
     "url": "https://github.com/cardinal-labs/cardinal-staking-ui/issues",
     "email": "info@cardinal.so"
   },
-  "homepage": "https://cardinal.so",
+  "homepage": "https://cardinal.so/dictators",
   "license": "Apache-2.0",
   "scripts": {
     "dev": "next dev",

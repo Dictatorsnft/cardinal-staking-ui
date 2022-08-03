@@ -1,17 +1,5 @@
 const HOST_MAPPINGS = [
   {
-    name: 'rogue-sharks',
-    hostname: 'stake.roguesharks.org',
-  },
-  {
-    name: 'Orbit',
-    hostname: 'stake.unfrgtn.space',
-  },
-  {
-    name: 'degengod',
-    hostname: 'stake.degengod.xyz',
-  },
-  {
     name: 'dictators',
     hostname: 'citadel.thedictator.xyz',
   },
@@ -54,7 +42,7 @@ const nextConfig = {
               {
                 source: '/',
                 destination: `/${mapping.name}`,
-                permanent: false,
+                permanent: true,
                 has: [
                   {
                     type: 'host',

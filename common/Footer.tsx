@@ -3,10 +3,10 @@ import { FaDiscord, FaGithub, FaMedium, FaTwitter } from 'react-icons/fa'
 import { contrastColorMode, hexColor } from './utils'
 
 const SOCIALS = {
-  discord: { icon: <FaDiscord />, link: 'https://discord.gg/byq6uNTugq' },
+  discord: { icon: <FaDiscord />, link: 'https://discord.gg/dictators' },
   github: { icon: <FaGithub />, link: 'https://github.com/cardinal-labs' },
   medium: { icon: <FaMedium />, link: 'https://cardinal-labs.medium.com/' },
-  twitter: { icon: <FaTwitter />, link: 'https://twitter.com/cardinal_labs' },
+  twitter: { icon: <FaTwitter />, link: 'https://twitter.com/DictatorsNFT_' },
 }
 
 export const Footer = ({
@@ -37,7 +37,7 @@ export const Footer = ({
             className="ml-3 text-2xl font-semibold"
             style={{ color: lighten(0.4, contrastColorMode(bgColor)[0]) }}
           >
-            Cardinal
+            Dictators
           </span>
         </div>
         <div className="flex gap-10 self-end text-center md:gap-20">
@@ -80,20 +80,20 @@ export const Footer = ({
           </span>
           {/* <span className="flex flex-col items-start">
             <div className="mb-5 text-lg font-semibold">Company</div>
-            <a href="https://www.cardinal.so/" className="text-gray-400">
+            <a href="https://www.thedictator.xyz/" className="text-gray-400">
               Website
             </a>
             <a href="" className="text-gray-400">
               Blog
             </a>
             <a
-              href="https://twitter.com/cardinal_labs"
+              href="https://twitter.com/DictatorsNFT_"
               className="text-gray-400"
             >
               Twitter
             </a>
             <a
-              href="https://discord.com/invite/byq6uNTugq"
+              href="https://discord.com/dictators"
               className="text-gray-400"
             >
               Discord
@@ -106,7 +106,7 @@ export const Footer = ({
         style={{ borderColor: lighten(0.2, bgColor) }}
       >
         <div className="flex items-center justify-center gap-2 text-gray-400">
-          Powered by Cardinal
+          Powered by NUKEPad
         </div>
         <div className="flex gap-4 text-gray-200">
           {Object.entries(SOCIALS).map(([id, { icon, link }]) => {
@@ -126,7 +126,7 @@ export const Footer = ({
         </div>
       </div>
       {/* <div className="text-md flex flex-row justify-center font-medium">
-        Copyright 2022 Cardinal Labs. All rights reserved
+        Copyright 2022 NUKEPad. All rights reserved
       </div> */}
     </div>
   )

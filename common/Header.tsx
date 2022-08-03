@@ -97,7 +97,7 @@ export const Header = () => {
                     src={'/cardinal-crosshair.svg'}
                   />
                 )}{' '}
-                Staking
+                Citadel
               </TitleText>
             )}
           </a>
