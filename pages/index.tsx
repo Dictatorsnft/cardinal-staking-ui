@@ -52,7 +52,7 @@ function Home() {
           </div>
         )}
         <Header />
-        <button type="button" class="btn btn-link">Link link <link rel="import" href="https://cardinal.so/dictators" /></button>
+        <h1>HELLO DICTATORS</h1>
         <Footer />
       </div>
     </div>
