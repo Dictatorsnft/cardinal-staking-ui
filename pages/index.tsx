@@ -46,15 +46,14 @@ function Home() {
            <br />
           </span>
         </div>
-        <div className="staking1" allign-center > 
+        <a href="https://citadel.nukepad.io/dictators">  <div className="staking1" allign-center > 
         <span
             className="ml-3 text-2xl font-semibold"
           >
             Stake <b>Dictators</b>
           </span>
-        <h3>&nbsp; &nbsp;Earn $NUKE by staking your Dictator. &nbsp; Access <br /> &nbsp; &nbsp;the most premium perks of NUKEDAO; get whitelisted <br /> &nbsp; &nbsp;for $NUKE based mints and earn $SOL rewards.</h3>
-        <a href="https://citadel.nukepad.io/dictators"><button className="button button5">  <img src="/nuke.png" /> &nbsp;&nbsp;STAKE&nbsp;YOUR DICTATOR</button></a>  
-        </div>
+        <h3>&nbsp; &nbsp;Earn $NUKE by staking your Dictator. &nbsp; Access <br /> &nbsp; &nbsp;the most premium perks of NUKEDAO; get whitelisted <br /> &nbsp; &nbsp;for $NUKE based mints and earn $SOL rewards.</h3> 
+        </div></a> 
 <br />
 <br />
         <div className="nuketopia" allign-center > 
