@@ -1,0 +1,2 @@
+{"v":0,"name":"sugar","msg":"Lend me some sugar, I am your neighbor.","level":30,"hostname":"Muhammads-MBP","pid":2367,"time":"2022-08-02T16:59:53.859022Z","target":"sugar","line":112,"file":"src/main.rs"}
+{"v":0,"name":"sugar","msg":"Failed to read keypair file: NUKETUC5Qzy9do5kFQMfCizcYetV8dLWkoxMMmbQkAn.json, No such file or directory (os error 2)","level":50,"hostname":"Muhammads-MBP","pid":2367,"time":"2022-08-02T16:59:53.871707Z","target":"sugar_cli::setup","line":62,"file":"src/setup.rs"}
