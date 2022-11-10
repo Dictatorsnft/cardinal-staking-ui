@@ -8,12 +8,15 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEnvironmentCtx } from 'providers/EnvironmentProvider'
 import { FaQuestion } from 'react-icons/fa'
+import { Tab } from '@headlessui/react'
 
 export function Placeholder() {
   return (
     <div className="h-[300px] animate-pulse rounded-lg bg-white bg-opacity-5 p-10"></div>
   )
 }
+
+
 
 function Home() {
   const { environment } = useEnvironmentCtx()
@@ -37,6 +40,7 @@ function Home() {
       </Head>
 
 
+
         <Header />
         <div className="header">
         <span
@@ -46,6 +50,7 @@ function Home() {
            <br />
           </span>
         </div>
+
         <a href="https://citadel.nukepad.io/dictators">  <div className="staking1" allign-center > 
         <span
             className="ml-3 text-2xl font-semibold"

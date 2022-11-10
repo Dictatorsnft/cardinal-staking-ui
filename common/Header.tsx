@@ -97,7 +97,7 @@ export const Header = () => {
                     src={'/nukepad-light.svg'}
                   />
                 )}{' '}
-                Citadel — NUKEPadStaking
+                Dictators
               </TitleText>
             )}
           </a>
