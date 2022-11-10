@@ -20,8 +20,8 @@ export interface EnvironmentContextValues {
 export const ENVIRONMENTS: Environment[] = [
   {
     label: 'mainnet-beta',
-    primary: process.env.MAINNET_PRIMARY || 'https://lingering-wild-river.solana-mainnet.quiknode.pro/8462bba58569d9a04e0f93ac6f23ae81b92409a1/',
-    secondary: 'https://lingering-wild-river.solana-mainnet.quiknode.pro/8462bba58569d9a04e0f93ac6f23ae81b92409a1/',
+    primary: process.env.MAINNET_PRIMARY || 'https://rpc.ankr.com/solana/3460f1763ca693a3a25ecadcf8fec99f681b6040cf65b72c9d82929a19a4b391',
+    secondary: 'https://rpc.ankr.com/solana/3460f1763ca693a3a25ecadcf8fec99f681b6040cf65b72c9d82929a19a4b391',
   },
   {
     label: 'testnet',
